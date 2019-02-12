@@ -66,7 +66,9 @@ from absl import flags
 import numpy as np
 import six
 import tensorflow as tf
-import tensorflow_ranking as tfr
+import sys
+sys.path.append('../')
+import python as tfr
 
 flags.DEFINE_string("train_path", None, "Input file path used for training.")
 flags.DEFINE_string("vali_path", None, "Input file path used for validation.")
